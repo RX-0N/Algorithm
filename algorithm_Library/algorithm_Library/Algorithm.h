@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <array>
 
 using namespace std;
 
@@ -11,6 +12,6 @@ public:
 	Algorithm();
 	~Algorithm();
 
-	void Binary_search(SearchArray array, int findNum); 
-};
-
+	void Binary_search(SearchArray array, int findNum);
+	void Selection_Sort(array _array);
+}
