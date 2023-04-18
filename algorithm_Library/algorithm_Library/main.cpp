@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <array>
-//#include "Algorithm.h"
 
 using namespace std;
 
@@ -28,7 +27,6 @@ void Selection_sort(array<int, N>& myArray)
 	int temp = 0;
 	int min = 0;
 	int minIndex = 0;
-
 
 	for (int i = 0; i < myArray.size(); i++)
 	{
