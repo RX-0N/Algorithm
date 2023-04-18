@@ -19,7 +19,6 @@ int main()
 	array<int, 2> array4 = { 5, 1 };	
 		
 	Selection_sort(array1);
-
 	return 0;
 }
 
