@@ -1,10 +1,46 @@
-/*
+#include "Test.h"
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-int main(void)
+void Test::test_11382()
+{
+	long long A, B, C;
+	long total = 0;
+
+	cin >> A >> B >> C;
+
+	total = A + B + C;
+
+	cout << total << endl;
+}
+
+void Test::test_10430()
+{
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	float result = 0;
+
+	cin >> a;
+	cin >> b;
+	cin >> c;
+
+	result = (a + b) % c;
+	cout << result << endl;
+
+	result = ((a % c) + (b % c)) % c;
+	cout << result << endl;
+
+	result = (a * b) % c;
+	cout << result << endl;
+
+	result = ((a % c) * (b % c)) % c;
+	cout << result << endl;
+}
+
+void Test::test_2588()
 {
 	string stringA = "";
 	string stringB = "";
@@ -21,15 +57,15 @@ int main(void)
 	cin >> stringA;
 
 	cin >> stringB;
-		
+
 	onePlace_B = stoi(stringB.substr(2));
-	
+
 	int integerA = stoi(stringA);
 	resultA = integerA * onePlace_B;
 
 	tensPlace_B = stoi(stringB.substr(1, 1));
 	resultB = integerA * tensPlace_B;
-		
+
 	hundredPlace_B = stoi(stringB.substr(0, 1));
 	resultC = integerA * hundredPlace_B;
 
@@ -44,4 +80,4 @@ int main(void)
 
 	// stoi	  : string to int 
 	// substr : Returns a substring [pos, pos+count)
-}*/
+}
