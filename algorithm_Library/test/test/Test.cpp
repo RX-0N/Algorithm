@@ -4,6 +4,29 @@
 
 using namespace std;
 
+void Test::test_1330() 
+{
+	
+}
+
+void Test::test_10172()
+{
+	string dogPrint;
+
+	dogPrint = "|\\_/|\n|q p|   /}\n( 0 )\"\"\"\\\n|\"^\"`    |\n||_/=\\\\__|";
+
+	cout << dogPrint << endl;
+}
+
+void Test::test_10171()
+{
+	string catPrint;
+
+	catPrint = "\\    /\\ \n )  ( ')\n(  /  )\n \\(__)|";
+
+	cout << catPrint << endl;
+}
+
 void Test::test_11382()
 {
 	long long A, B, C;
