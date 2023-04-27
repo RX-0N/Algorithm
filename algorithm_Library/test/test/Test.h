@@ -6,6 +6,8 @@ public:
 
 	
 	//Á¶°Ç¹®
+	void test_2480();
+	void test_2525();
 	void test_2884();
 	void test_14681();
 	void test_2753();

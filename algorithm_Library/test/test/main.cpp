@@ -7,5 +7,5 @@ int main()
 {
 	Test* test = new Test();
 
-	test->test_2884();
+	test->test_2480();
 }
