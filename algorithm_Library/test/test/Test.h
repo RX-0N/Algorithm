@@ -6,6 +6,10 @@ public:
 
 	
 	//조건문
+	void test_2884();
+	void test_14681();
+	void test_2753();
+	void test_9498();
 	void test_1330();
 
 	// 입출력과 사칙연산

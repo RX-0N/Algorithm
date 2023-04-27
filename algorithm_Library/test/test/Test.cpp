@@ -4,9 +4,113 @@
 
 using namespace std;
 
-void Test::test_1330() 
+void Test::test_2884()
 {
 	
+}
+
+void Test::test_14681()
+{
+	int x = 0, y = 0;
+
+	cin >> x >> y;
+
+	if ((-10000 <= x && 10000 >= x && 0 != x) && (-10000 <= y && 10000 >= y && 0 != y))
+	{		
+		if (0 < x && 0 < y)
+		{
+			cout << "1" << endl;
+		}		
+		else if (0 > x && 0 < y)
+		{
+			cout << "2" << endl;
+		}		
+		else if (0 > x && 0 > y)
+		{
+			cout << "3" << endl;
+		}		
+		else if (0 < x && 0 > y)
+		{
+			cout << "4" << endl;
+		}
+	}
+}
+
+void Test::test_2753()
+{
+	unsigned int year = 0;
+
+	cin >> year;
+
+	if (1 <= year && 4000 >= year)
+	{
+		if (year % 400 == 0)
+		{
+			cout << "1" << endl;
+		}
+		else if (year % 4 == 0 && year % 100 != 0)
+		{
+			cout << "1" << endl;
+		}
+		else
+		{
+			cout << "0" << endl;
+		}
+	}
+}
+
+void Test::test_9498()
+{
+	unsigned int score = 0;
+
+	cin >> score;
+
+	if (0 <= score && 100 >= score)
+	{
+		if (100 >= score && 90 <= score)
+		{
+			cout << "A" << endl;
+		}
+		else if (80 <= score && 89 >= score)
+		{
+			cout << "B" << endl;
+		}
+		else if (70 <= score && 79 >= score)
+		{
+			cout << "C" << endl;
+		}
+		else if(60 <= score && 69 >= score)
+		{
+			cout << "D" << endl;
+		}
+		else
+		{
+			cout << "F" << endl;
+		}
+	}	
+}
+
+void Test::test_1330() 
+{
+	int A = 0, B = 0;
+
+	cin >> A >> B;
+
+	if ((-10000 <= A && 10000 >= A) && (-10000 <= B && 10000 >= B))
+	{	
+		if (A > B)
+		{
+			cout << ">" << endl;
+		}
+		else if (A < B)
+		{
+			cout << "<" << endl;
+		}
+		else
+		{
+			cout << "==" << endl;
+		}	
+	}
 }
 
 void Test::test_10172()
