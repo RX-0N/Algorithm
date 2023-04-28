@@ -1,8 +1,7 @@
 ﻿  Test.cpp
-D:\DarkBox\everyDay_Coding\algorithm_Library\test\test\Test.cpp(11,6): warning C4101: 'quotient' :참조되지 않은 지역 변수입니다.
-D:\DarkBox\everyDay_Coding\algorithm_Library\test\test\Test.cpp(196,16): warning C4244: '=': '__int64'에서 'long'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\DarkBox\everyDay_Coding\algorithm_Library\test\test\Test.cpp(212,19): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\DarkBox\everyDay_Coding\algorithm_Library\test\test\Test.cpp(215,31): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\DarkBox\everyDay_Coding\algorithm_Library\test\test\Test.cpp(218,19): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\DarkBox\everyDay_Coding\algorithm_Library\test\test\Test.cpp(221,31): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  test.vcxproj -> D:\DarkBox\everyDay_Coding\algorithm_Library\test\x64\Debug\test.exe
+E:\algorithm\Algorithm\algorithm_Library\test\test\Test.cpp(260,16): warning C4244: '=': '__int64'에서 'long'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\algorithm\Algorithm\algorithm_Library\test\test\Test.cpp(276,19): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\algorithm\Algorithm\algorithm_Library\test\test\Test.cpp(279,31): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\algorithm\Algorithm\algorithm_Library\test\test\Test.cpp(282,19): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\algorithm\Algorithm\algorithm_Library\test\test\Test.cpp(285,31): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  test.vcxproj -> E:\algorithm\Algorithm\algorithm_Library\test\x64\Debug\test.exe

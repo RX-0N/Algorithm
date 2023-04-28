@@ -7,22 +7,54 @@ using namespace std;
 void Test::test_2480()
 {
 	int a, b, c;
+	int result = 0;	
 
-	cin >> a, b, c;
-	
-	//같은 눈이 3개가 나오면 10, 000원 + (같은 눈)×1, 000원의 상금을 받게 된다.
-	
+	cin >> a >> b >> c;	
 
-	//같은 눈이 2개만 나오는 경우에는 1, 000원 + (같은 눈)×100원의 상금을 받게 된다.
-	
+	if ((a == b) && (a == c) && (b == c))
+	{
+		result = a * 1000 + 10000;
 
-	//모두 다른 눈이 나오는 경우에는(그 중 가장 큰 눈)×100원의 상금을 받게 된다.
-
-
-
-	/*예를 들어, 3개의 눈 3, 3, 6이 주어지면 상금은 1, 000 + 3×100으로 계산되어 1, 300원을 받게 된다.
-	또 3개의 눈이 2, 2, 2로 주어지면 10, 000 + 2×1,000 으로 계산되어 12,000원을 받게 된다.
-	3개의 눈이 6, 2, 5로 주어지면 그중 가장 큰 값이 6이므로 6×100으로 계산되어 600원을 상금으로 받게 된다.*/
+		cout << result << endl;
+	}
+	else if ((a == b) || (a == c) || (b == c))
+	{
+		if (a == b)
+		{
+			result = a * 100 + 1000;
+		}
+		else if (a == c)
+		{
+			result = a * 100 + 1000;
+		}
+		else if (b == c)
+		{
+			result = b * 100 + 1000;
+		}
+		
+		cout << result << endl;
+	}
+	else if ((a != b) && (b != c) && (a != c))
+	{		
+		if (a < b || a < c)
+		{
+			if (b > c)
+			{
+				result = b * 100;
+				cout << result << endl;
+			}
+			else
+			{
+				result = c * 100;
+				cout << result << endl;
+			}
+		}
+		else
+		{
+			result = a * 100;
+			cout << result << endl;
+		}
+	}
 }
 
 void Test::test_2525()
