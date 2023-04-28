@@ -32,10 +32,3 @@
 *.app
 
 # C++ 
-*.vcxproj
-*.vcxproj.filters
-*.vcxproj.user
-.vs
-Debug
-x64
-
