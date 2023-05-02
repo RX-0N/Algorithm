@@ -1,8 +1,71 @@
 #include "Test.h"
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
+
+#define MAX_SIZE 10000
+
+void Test::test_8393()
+{
+	int inputNum;
+	int sum = 0;
+
+	cin >> inputNum;
+
+	if (1 <= inputNum && MAX_SIZE >= inputNum)
+	{
+		for (int i = 0; i <= inputNum; i++)
+		{
+			sum += i;
+		}			
+	}
+
+	cout << sum << endl;	
+}
+
+void Test::test_10950()
+{
+	int testCaseCount;
+	int a, b;
+
+	cin >> testCaseCount;
+
+	vector<int> resultArray;
+
+	for (int i = 0; i < testCaseCount; i++)
+	{
+		cin >> a >> b;
+
+		if (0 < a && 10 > b)
+		{
+			resultArray.push_back(a + b);
+		}		
+	}
+
+	for (const auto &j : resultArray)
+	{		
+		cout << j << endl;
+	}
+}
+
+void Test::test_2739()
+{
+	int target;
+	int sum;
+
+	cin >> target;
+
+	if (1 <= target && 9 >= target)
+	{
+		for (int i = 1; i <= 9; i++)
+		{
+			sum = target * i;
+			cout << target << " * " << i << " = " << sum << endl;
+		}
+	}
+}
 
 void Test::test_2480()
 {

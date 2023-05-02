@@ -3,7 +3,10 @@ class Test
 {
 public:
 
-
+	//반복문
+	void test_2739();
+	void test_10950();
+	void test_8393();
 	
 	//조건문
 	void test_2480();
