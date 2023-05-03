@@ -3,12 +3,14 @@ class Test
 {
 public:
 
-	//반복문
+	//loop
+	void test_25314();
+	void test_25304();
 	void test_2739();
 	void test_10950();
 	void test_8393();
 	
-	//조건문
+	//if
 	void test_2480();
 	void test_2525();
 	void test_2884();
@@ -17,7 +19,7 @@ public:
 	void test_9498();
 	void test_1330();
 
-	// 입출력과 사칙연산
+	// input, output
 	void test_10172();
 	void test_10171();
 	void test_11382();

@@ -7,6 +7,58 @@ using namespace std;
 
 #define MAX_SIZE 10000
 
+void Test::test_25314()
+{
+	int number = 0;
+	int share;	
+	int byteSize = 4;
+
+	string resultString = "long int";
+	string addString = "long ";
+
+	cin >> number;
+
+	share = number / byteSize;
+
+	if (1 < share)
+	{
+		for (int i = 1; i < share; i++)
+		{
+			resultString.insert(0, addString);
+		}
+	}
+	
+	cout << resultString << endl;
+}
+
+void Test::test_25304()
+{
+	int totalCost;
+	int objectCount;
+	int a, b;
+	int sum = 0;
+
+	cin >> totalCost;
+
+	cin >> objectCount;
+
+	for (int i = 0; i < objectCount; i++)
+	{
+		cin >> a >> b;
+
+		sum += (a * b);
+	}
+
+	if (sum == totalCost)
+	{
+		cout << "Yes" << endl;
+	}
+	else
+	{
+		cout << "No" << endl;
+	}
+}
+
 void Test::test_8393()
 {
 	int inputNum;
