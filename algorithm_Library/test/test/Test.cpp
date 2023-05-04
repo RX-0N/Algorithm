@@ -2,10 +2,52 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <array>
 
 using namespace std;
 
 #define MAX_SIZE 10000
+
+void Test::test_15552()
+{
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+
+	int testCases; 
+	int A, B;
+	int sum = 0;
+	
+	vector<int> sumArray; 
+
+	cin >> testCases;	
+
+	if (1000000 >= testCases)
+	{
+		for (int i = 0; i < testCases; i++)
+		{
+			cin >> A >> B;
+
+			if ((1000 >= A) && (1000 >= B))
+			{
+				sum = A + B;
+				sumArray.push_back(sum);
+			}
+			else
+			{
+				cout << "A and B is too short or long.\n";
+			}
+		}		
+	}
+	else
+	{
+		cout << "test Cases too short or long.\n";
+	}
+
+	for (const auto& i : sumArray)
+	{
+		cout << i << "\n";
+	}
+}
 
 void Test::test_25314()
 {
