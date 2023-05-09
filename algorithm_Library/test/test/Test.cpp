@@ -61,30 +61,6 @@ void Test::test_10951()
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 void Test::test_10951()
 {
 	int A, B;
