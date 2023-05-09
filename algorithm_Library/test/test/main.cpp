@@ -6,6 +6,6 @@ using namespace std;
 int main()
 {
 	Test* test = new Test();
-
+	
 	test->test_10807();
 }

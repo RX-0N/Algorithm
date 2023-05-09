@@ -85,6 +85,82 @@ void Test::test_10951()
 
 
 
+void Test::test_10951()
+{
+	int A, B;
+	vector<int> sumArray;
+
+	while (true)
+	{	
+		cin >> A >> B;		
+
+		sumArray.push_back(A + B);		
+
+		if (cin >> A)
+		{
+			cout << A;
+			break;
+		}
+		
+		// Ongoing...
+	}
+
+	for (const auto& i : sumArray)
+	{
+		cout << i << endl;
+	}
+
+	
+}
+
+void Test::test_10952()
+{
+	int A, B;
+	vector<int> sumArray;
+
+	while (true)
+	{
+		cin >> A >> B;
+
+		if (0 == A && 0 == B)
+		{
+			break;
+		}
+
+		sumArray.push_back(A + B);
+	}
+
+	for (const auto& i : sumArray)
+	{
+		cout << i << endl;
+	}
+}
+
+void Test::test_2439()
+{
+	int starCount;
+
+	cin >> starCount;
+
+	if (1 <= starCount && 100 >= starCount)
+	{
+		for (int i = 0; i < starCount; i++)
+		{
+			for (int j = starCount - (i + 1); j > 0; j--)
+			{
+				cout << " ";
+			}
+
+			for (int k = 0; k <= i; k++)
+			{
+				cout << "*";
+			}
+
+			cout << endl;
+		}
+	}
+}
+
 void Test::test_15552()
 {
 	ios_base::sync_with_stdio(false);

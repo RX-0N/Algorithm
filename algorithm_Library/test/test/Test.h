@@ -6,6 +6,8 @@ public:
 	//loop
 	void test_10807();
 	void test_10951();
+	void test_10952();
+	void test_2439();
 	void test_15552();
 	void test_25314();
 	void test_25304();
