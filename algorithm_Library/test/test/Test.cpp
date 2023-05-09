@@ -7,6 +7,83 @@
 using namespace std;
 
 #define MAX_SIZE 10000
+void Test::test_10807()
+{
+	int N; 
+	int inputNum;
+	int findNum;
+
+	vector<int> testArray;
+
+	cin >> N;
+
+	for (int i = 0; i < N; i++)
+	{
+		cin >> inputNum;
+
+		testArray.push_back(inputNum);
+	}
+
+	cin >> findNum;
+
+	int count = 0;
+	for (const auto& i : testArray)
+	{
+		if (i == findNum)
+		{
+			count++;
+		}		
+	}
+
+	cout << count;
+}
+
+void Test::test_10951()
+{
+	int A, B;	
+	vector<int> sumArray;
+
+	while (true)
+	{
+		cin >> A >> B;
+
+		if (cin.eof())
+		{
+			break;
+		}
+
+		sumArray.push_back(A + B);			
+	}
+
+	for (const auto& i : sumArray)
+	{
+		cout << i << endl;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 void Test::test_15552()
 {
