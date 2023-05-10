@@ -3,8 +3,12 @@ class Test
 {
 public:
 
-	//loop
+	//1D Array
+	void test_10818();
+	void test_10871();
 	void test_10807();
+
+	//loop		
 	void test_10951();
 	void test_10952();
 	void test_2439();

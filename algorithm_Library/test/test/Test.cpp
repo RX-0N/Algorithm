@@ -7,6 +7,70 @@
 using namespace std;
 
 #define MAX_SIZE 10000
+
+void Test::test_10818()
+{
+	int N;
+	int inputNum;
+
+	vector<int> testArray;
+
+	cin >> N; 
+
+	for (int i = 0; i < N; i++)
+	{
+		cin >> inputNum;
+		testArray.push_back(inputNum);
+	}
+
+	int minNum;
+	int maxNum;
+
+	for (int i = 0; i < N; i++)
+	{
+		minNum = testArray[i];
+		maxNum = testArray[i];
+
+		if (minNum > testArray[i])
+		{
+			minNum = testArray[i];
+		}
+
+		if (maxNum < testArray[i])
+		{
+			maxNum = testArray[i];
+		}		
+	}
+
+	cout << minNum << " " << maxNum;
+}
+
+void Test::test_10871()
+{
+	int N;
+	int findNum;
+	int inputNum;
+
+	vector<int> resultArray;
+
+	cin >> N >> findNum;
+
+	for (int i = 0; i < N; i++)
+	{
+		cin >> inputNum;
+
+		if (inputNum < findNum)
+		{
+			resultArray.push_back(inputNum);
+		}
+	}
+
+	for (const auto& j : resultArray)
+	{
+		cout << j << " ";
+	}
+}
+
 void Test::test_10807()
 {
 	int N; 
@@ -59,32 +123,6 @@ void Test::test_10951()
 	{
 		cout << i << endl;
 	}
-}
-
-void Test::test_10951()
-{
-	int A, B;
-	vector<int> sumArray;
-
-	while (true)
-	{	
-		cin >> A >> B;		
-
-		sumArray.push_back(A + B);		
-
-		if (cin >> A)
-		{
-			cout << A;
-			break;
-		}
-		
-		// Ongoing...
-	}
-
-	for (const auto& i : sumArray)
-	{
-		cout << i << endl;
-	}	
 }
 
 void Test::test_10952()
