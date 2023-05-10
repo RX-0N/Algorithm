@@ -84,9 +84,7 @@ void Test::test_10951()
 	for (const auto& i : sumArray)
 	{
 		cout << i << endl;
-	}
-
-	
+	}	
 }
 
 void Test::test_10952()
