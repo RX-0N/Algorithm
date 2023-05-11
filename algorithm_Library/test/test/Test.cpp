@@ -7,11 +7,34 @@
 using namespace std;
 
 #define MAX_SIZE 10000
+void Test::test_2562()
+{
+	array<int, 9> testArray;
+	int max, index, i;
+
+	for (i = 0; i < testArray.size(); i++)
+	{
+		cin >> testArray[i];
+		if (0 == i)
+		{
+			max = testArray[i];
+		}
+
+		if (max < testArray[i])
+		{
+			max = testArray[i];			
+		}
+	}
+
+	cout << max << "\n" << i - 1;
+}
 
 void Test::test_10818()
 {
 	int N;
 	int inputNum;
+	int minNum;
+	int maxNum;
 
 	vector<int> testArray;
 
@@ -21,15 +44,12 @@ void Test::test_10818()
 	{
 		cin >> inputNum;
 		testArray.push_back(inputNum);
-	}
 
-	int minNum;
-	int maxNum;
-
-	for (int i = 0; i < N; i++)
-	{
-		minNum = testArray[i];
-		maxNum = testArray[i];
+		if (i == 0)
+		{
+			minNum = testArray.front();
+			maxNum = testArray.front();
+		}
 
 		if (minNum > testArray[i])
 		{
