@@ -7,12 +7,13 @@
 using namespace std;
 
 #define MAX_SIZE 10000
+
 void Test::test_2562()
 {
-	array<int, 9> testArray;
-	int max, index, i;
+	int testArray[9];
+	int max = 0, i, index = 0;
 
-	for (i = 0; i < testArray.size(); i++)
+	for (i = 0; i < 9; i++)
 	{
 		cin >> testArray[i];
 		if (0 == i)
@@ -22,11 +23,13 @@ void Test::test_2562()
 
 		if (max < testArray[i])
 		{
-			max = testArray[i];			
+			max = testArray[i];
+			index = i;
 		}
 	}
 
-	cout << max << "\n" << i - 1;
+	cout << max << endl;
+	cout << index + 1 << endl;
 }
 
 void Test::test_10818()
