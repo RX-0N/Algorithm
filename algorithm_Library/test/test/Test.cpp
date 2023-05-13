@@ -6,7 +6,42 @@
 
 using namespace std;
 
+//int main()
+//{
+//	
+//}
+
 #define MAX_SIZE 10000
+void Test::test_10810()
+{
+	int N, M;
+	int start, end;
+	int ballNumber;
+
+	vector<int> basket;
+
+	cin >> N >> M;
+	
+	for (int i = 0; i < N; i++)
+	{
+		basket.push_back(0);
+	}
+
+	for (int i = 0; i < M; i++)
+	{
+		cin >> start >> end >> ballNumber;
+			
+		for (int j = start - 1; j <= end -1; j++)
+		{
+			basket[j] = ballNumber;
+		}		
+	}
+
+	for (const auto& i : basket)
+	{
+		cout << i << " ";
+	}
+}
 
 void Test::test_2562()
 {
