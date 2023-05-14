@@ -12,6 +12,60 @@ using namespace std;
 //}
 
 #define MAX_SIZE 10000
+
+void Test::test_5597()
+{
+	int student = 30;
+	
+	vector<int> studentList;
+	vector<int> absence;
+	
+	for (int i = 0; i < 28; i++)
+	{
+		int attendance;
+		cin >> attendance;
+		studentList.push_back(attendance);		
+	}
+
+	for (size_t j = 1; j <= student; j++)
+	{
+		
+	}
+	
+}
+
+void Test::test_10813()
+{
+	vector<int> basket;
+
+	int N, M;
+	int i, j;
+
+	cin >> N >> M;
+
+	for (size_t x = 0; x < N; x++)
+	{
+		basket.push_back(x + 1);
+	}
+
+	for (size_t y = 0; y < M; y++)
+	{
+		cin >> i >> j;
+		
+		i -= 1;
+		j -= 1;
+
+		int temp = basket[i];
+		basket[i] = basket[j];
+		basket[j] = temp;
+	}
+
+	for (auto& z : basket)
+	{
+		cout << z << " ";
+	}
+}
+
 void Test::test_10810()
 {
 	int N, M;
