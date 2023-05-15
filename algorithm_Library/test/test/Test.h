@@ -4,6 +4,7 @@ class Test
 public:
 
 	//1D Array
+	void test_3052();
 	void test_5597();
 	void test_10813();
 	void test_10810();

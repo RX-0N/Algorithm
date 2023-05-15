@@ -8,30 +8,46 @@ using namespace std;
 
 //int main()
 //{
-//	
+//
 //}
 
 #define MAX_SIZE 10000
+
+void Test::test_3052() 
+{
+	
+}
 
 void Test::test_5597()
 {
 	int student = 30;
 	
-	vector<int> studentList;
-	vector<int> absence;
-	
+	vector<int> tempList;
+
+	for (size_t j = 0; j < student; j++)
+	{
+		tempList.push_back(j + 1);
+	}
+
 	for (int i = 0; i < 28; i++)
 	{
 		int attendance;
 		cin >> attendance;
-		studentList.push_back(attendance);		
-	}
 
-	for (size_t j = 1; j <= student; j++)
-	{
-		
+		for (int j = 0; j < tempList.size(); j++)
+		{
+			if (attendance == tempList[j])
+			{
+				tempList.erase(tempList.begin() + j);
+				break;
+			}
+		}		
 	}
 	
+	for (const auto& i : tempList)
+	{
+		cout << i << endl;
+	}	
 }
 
 void Test::test_10813()
