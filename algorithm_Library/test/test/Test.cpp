@@ -13,9 +13,37 @@ using namespace std;
 
 #define MAX_SIZE 10000
 
-void Test::test_3052() 
+void Test::test_3052()
 {
+	int A, B = 42;
+	int rest = 0;
+	int inputCount = 10;
+
+	vector<int> restArray;	
 	
+	for (int i = 0; i < inputCount; i++)
+	{
+		cin >> A;
+
+		rest = A % B;
+		restArray.push_back(rest);		
+	}
+
+	int count = 0;
+	for (int j = 0; j < restArray.size(); j++)
+	{
+		if (rest == restArray[j])
+		{
+			count++;
+		}
+
+		if (rest == restArray[j] && 1 < count)
+
+		{
+			restArray.erase(restArray.begin() + j);
+		}	
+	}
+	cout << restArray.size() << endl;
 }
 
 void Test::test_5597()
