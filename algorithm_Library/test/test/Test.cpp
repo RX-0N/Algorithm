@@ -18,31 +18,33 @@ void Test::test_3052()
 	int A, B = 42;
 	int rest = 0;
 	int inputCount = 10;
+	int count = 0;
 
-	vector<int> restArray;	
+	vector<int> restArray;
 	
 	for (int i = 0; i < inputCount; i++)
 	{
 		cin >> A;
 
-		rest = A % B;
-		restArray.push_back(rest);		
-	}
+		rest = A % B;			
+		
+		bool insertFlag = false;
 
-	int count = 0;
-	for (int j = 0; j < restArray.size(); j++)
-	{
-		if (rest == restArray[j])
-		{
-			count++;
-		}
-
-		if (rest == restArray[j] && 1 < count)
-
-		{
-			restArray.erase(restArray.begin() + j);
+		for (int j = 0; j < restArray.size(); j++)
+		{			
+			if (rest == restArray[j])
+			{				
+				insertFlag = true;
+				break;
+			}
 		}	
+
+		if (false == insertFlag)
+		{
+			restArray.push_back(rest);
+		}
 	}
+
 	cout << restArray.size() << endl;
 }
 
