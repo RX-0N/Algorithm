@@ -13,6 +13,38 @@ using namespace std;
 
 #define MAX_SIZE 10000
 
+void Test::test_10811()
+{
+	int N, M;
+	int i, j;
+	vector<int> bucket;
+
+	cin >> N >> M;
+
+	for (int i = 1; i <= N; i++)
+	{
+		bucket.push_back(i);
+	}
+
+	for (int i = 0; i < M; i++)
+	{
+		cin >> i >> j;
+
+		for (j; j > i; j--)
+		{
+			int swap = bucket[i];
+			bucket[i] = bucket[j];
+			bucket[j] = swap;
+			i++;
+		}
+	}
+
+	for (const auto& i : bucket)
+	{
+		cout << i << " " << endl;
+	}
+}
+
 void Test::test_3052()
 {
 	int A, B = 42;
