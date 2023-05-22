@@ -3,6 +3,7 @@
 #include <string>
 #include <vector>
 #include <array>
+#include <iomanip>
 
 using namespace std;
 
@@ -12,6 +13,39 @@ using namespace std;
 //}
 
 #define MAX_SIZE 10000
+void Test::test_1546()
+{
+	int		subjects;	    // 과목 수
+	int		score;		    // 개별 점수
+	double	maxScore = 0.f; // 점수 최대값
+	double	average = 0.f;	// 조작된 평균점수
+	
+	vector<float> scores;
+
+	cin >> subjects;
+
+	for (int i = 0; i < subjects; i++)
+	{
+		cin >> score;
+
+		if (maxScore < score)
+		{
+			maxScore = score;
+		}		
+
+		scores.push_back(score);
+	}
+
+	for (const auto& i : scores)
+	{
+		average += ((i / maxScore) * 100);
+	}
+
+	average /= subjects;
+
+	cout << setprecision(12);
+	cout << average;
+}
 
 void Test::test_10811()
 {
@@ -26,15 +60,15 @@ void Test::test_10811()
 		bucket.push_back(i);
 	}
 
-	for (int i = 0; i < M; i++)
+	for (int x = 0; x < M; x++)
 	{
 		cin >> i >> j;
 
 		for (j; j > i; j--)
 		{
-			int swap = bucket[i];
-			bucket[i] = bucket[j];
-			bucket[j] = swap;
+			int swap = bucket[i - 1];
+			bucket[i - 1] = bucket[j - 1];
+			bucket[j - 1] = swap;
 			i++;
 		}
 	}
