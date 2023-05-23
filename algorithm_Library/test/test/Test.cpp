@@ -13,6 +13,57 @@ using namespace std;
 //}
 
 #define MAX_SIZE 10000
+void Test::test_11654()
+{
+
+}
+
+void Test::test_9086()
+{
+	int testCaseCount = 0;
+	string word;
+	vector<string> wordList;
+
+	cin >> testCaseCount;
+
+	for (int i = 0; i < testCaseCount; i++)
+	{
+		cin >> word;
+		wordList.push_back(word);
+	}
+	
+	for (const auto& s : wordList)
+	{
+		cout << s[0] << s[s.size() - 1] << endl;
+	}
+}
+
+void Test::test_2743()
+{
+	string word;
+	int count = 0; 
+
+	cin >> word;
+
+	for (int i = 0; i <= word.size(); i++)
+	{
+		if (i >= word.size())
+			cout << i;
+	}		
+}
+
+void Test::test_27866()
+{
+	string word;
+	int i = 0;
+
+	cin >> word >> i;
+
+	cout << word[i - 1] << endl;
+}
+
+//==========================================================
+
 void Test::test_1546()
 {
 	int		subjects;	    // °ú¸ñ ¼ö
