@@ -4,11 +4,11 @@ class Test
 public:
 
 	//string
+	void test_11720();
 	void test_11654();
 	void test_27866();
 	void test_2743();
-	void test_9086();
-	
+	void test_9086();	
 
 	//1D Array
 	void test_1546();

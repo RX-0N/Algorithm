@@ -13,9 +13,36 @@ using namespace std;
 //}
 
 #define MAX_SIZE 10000
+void Test::test_11720()
+{
+	int count;
+	int sum = 0;
+	int num = 0;
+	string stringNumber;	
+
+	cin >> count;
+
+	cin >> num;
+
+	for (int i = 0; i < stringNumber.size(); i++)
+	{
+		string temp;
+		temp = stringNumber[i];
+
+		sum += stoi(temp);
+	}
+
+	cout << sum << endl;
+}
+
 void Test::test_11654()
 {
+	char inputChar;	
 
+	cin >> inputChar;
+
+	int asciil = int(inputChar);
+	cout << asciil << endl;
 }
 
 void Test::test_9086()
