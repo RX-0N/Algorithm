@@ -4,6 +4,7 @@
 #include <vector>
 #include <array>
 #include <iomanip>
+#include <map>
 
 using namespace std;
 
@@ -13,16 +14,82 @@ using namespace std;
 //}
 
 #define MAX_SIZE 10000
+void Test::test_2675()
+{
+	int testCount;
+	int repeatCountArray[] = { 0 };
+	string inputStringArray[] = { "" };
+
+	cin >> testCount;
+
+	for (int i = 0; i < testCount; i++)
+	{
+		int stringRepeatCount;
+		string inputString;
+
+		cin >> stringRepeatCount >> inputString;	
+		
+		repeatCountArray[i] = stringRepeatCount;
+		inputStringArray[i] = inputString;
+	}
+
+	
+}
+
+void Test::test_10809()
+{	
+	vector<int> alphabet(26, -1);
+	string word;		
+	unsigned int asciiIndexStart = 97;
+	unsigned int asciiIndexEnd = 122;
+
+	cin >> word;	
+
+	for (int i = asciiIndexStart; i <= asciiIndexEnd; i++)
+	{
+		for (int j = 0; j < word.size(); j++)
+		{
+			if (i == word[j])
+			{
+				int index = i - 97;
+
+				if (-1 == alphabet[index])
+				{
+					alphabet[index] = j;
+				}				
+			}			
+		}	
+	}
+
+	for (const auto& i : alphabet)
+	{
+		cout << i << " ";
+	}
+
+// 	vector<int> alpha(26, -1);
+// 	string s;
+// 	cin >> s;
+// 
+// 	for (int i = 0; i < s.size(); i++)
+// 		if (alpha[s[i] - 'a'] == -1)
+// 			alpha[s[i] - 'a'] = i;
+// 
+// 	for (auto& elem : alpha)
+// 		cout << elem << ' ';
+// 
+// 	return 0;
+}
+
 void Test::test_11720()
 {
 	int count;
-	int sum = 0;
-	int num = 0;
+	int sum = 0;	
+
 	string stringNumber;	
 
 	cin >> count;
 
-	cin >> num;
+	cin >> stringNumber;
 
 	for (int i = 0; i < stringNumber.size(); i++)
 	{

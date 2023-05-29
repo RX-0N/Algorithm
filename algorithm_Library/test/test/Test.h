@@ -4,6 +4,8 @@ class Test
 public:
 
 	//string
+	void test_2675();
+	void test_10809();
 	void test_11720();
 	void test_11654();
 	void test_27866();
