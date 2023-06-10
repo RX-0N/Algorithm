@@ -18,22 +18,31 @@ void Test::test_2675()
 {
 	int testCount;
 	int repeatCountArray[] = { 0 };
-	string inputStringArray[] = { "" };
 
 	cin >> testCount;
+
+	vector <string> inputStringArray(testCount);
 
 	for (int i = 0; i < testCount; i++)
 	{
 		int stringRepeatCount;
 		string inputString;
 
-		cin >> stringRepeatCount >> inputString;	
-		
-		repeatCountArray[i] = stringRepeatCount;
-		inputStringArray[i] = inputString;
+		cin >> stringRepeatCount >> inputString;
+
+		for (int j = 0; j < inputString.size(); j++)
+		{
+			for (int k = 0; k < stringRepeatCount; k++)
+			{
+				inputStringArray[i].push_back(inputString[j]);
+			}
+		}
 	}
 
-	
+	for (auto& i : inputStringArray)
+	{
+		cout << i << endl;
+	}
 }
 
 void Test::test_10809()
