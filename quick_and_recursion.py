@@ -130,6 +130,13 @@ def findMaxNum2(list, max):
     # 재귀 단계
     return findMaxNum2(list[1:], max)
 
+#4-3 teaching material version
+def max(list):
+    if len(list) == 2:
+        return list[0] if list[0] > list[1] else list[1]
+    sub_max = max(list[1:])
+    return list[0] if list[0] > sub_max else list[1]
+
 temp = 0
 random.shuffle(testArr)
 print(testArr)
