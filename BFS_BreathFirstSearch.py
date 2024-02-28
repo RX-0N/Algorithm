@@ -10,20 +10,16 @@ graph = {}
 # jhin = {'진':False}
 #graph["asinus"] = {teemo, nanus, ezreal, vayne, jhin}
 
+# todo 각 인원 별로 자신과 연결된 node(정점) 목록을 생성
 graph['아시누스'] = {'티모': True, '나서스': False, '나서스': False, '베인':False, '진':False}
-print(graph['아시누스'].get('티모'))
-
-# 각 인원별로 자신과 연결된 정점 목록을 생성
+graph['티모'] = []
+graph['나서스'] = []
+graph['베인'] = []
+graph['진'] = []
 
 def who_is_seller(person):
-    print("is seller?")
-    target = {}
-    target = person
-
-    for seller in target:
-        if seller.values():
-            return True
-    return False
+    print("step5 : is seller?")
+    print("step5 : ", graph['아시누스'].get(person))
 
 #누가 버섯을 파는가?
 def search(name):
@@ -31,8 +27,13 @@ def search(name):
     search_queue += graph[name]
     searched = []
 
+    print("step1 : ", graph)
+    print("step2 : ", graph['아시누스'].values())
+    print("setp3 : ", graph['아시누스'].get('티모'))
+
     while search_queue:
         person = search_queue.popleft()
+        print("step4 : ", person)
         if not person in searched:
             if who_is_seller(person):
                 print(person + " is a mushroom seller!")
@@ -42,4 +43,7 @@ def search(name):
                 searched.append(person)
     return False
 
-search()
+search('아시누스')
+
+def bfs(graph):
+    print("start bfs search...")
