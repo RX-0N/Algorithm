@@ -8,7 +8,7 @@ int max3(int a, int b, int c)
 	return max;
 }
 
-int main(void)
+int main2(void)
 {
 	printf("max3(%d, %d, %d) = %d\n", 3, 2, 2, max3(3, 2, 2));
 	printf("max3(%d, %d, %d) = %d\n", 3, 2, 1, max3(3, 2, 1));
