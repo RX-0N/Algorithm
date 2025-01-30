@@ -67,7 +67,7 @@ int min4(int a, int b, int c, int d)
 	
 	return min;
 }
-int main(void)
+int main0(void)
 {
 	srand(time(NULL));
 

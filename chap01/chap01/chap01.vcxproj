@@ -129,6 +129,9 @@
   <ItemGroup>
     <ClCompile Include="max3.c" />
     <ClCompile Include="max3comb.c" />
+    <ClCompile Include="med3.c" />
+    <ClCompile Include="practice_01.c" />
+    <ClCompile Include="sign.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
