@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void)
+int main9(void)
 {
 	int i, n;
 	int sum;
