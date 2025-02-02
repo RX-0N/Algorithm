@@ -42,5 +42,11 @@
     <ClCompile Include="Q7.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Q8.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Q9.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
