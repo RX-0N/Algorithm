@@ -27,7 +27,7 @@ int sumof(int a, int b)
 	return sum;
 }
 
-int main(void)
+int main12(void)
 {
 	printf("%d 부터 %d 까지의 합은? -> %d\n", 3, 5, sumof(3, 5));
 	printf("%d 부터 %d 까지의 합은? -> %d\n", 6, 4, sumof(6, 4));
