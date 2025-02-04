@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dbl_digits.c" />
     <ClCompile Include="max3.c" />
     <ClCompile Include="max3comb.c" />
     <ClCompile Include="med3.c" />

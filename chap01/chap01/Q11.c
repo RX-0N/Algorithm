@@ -1,35 +1,26 @@
 #include <stdio.h>
+#include <string.h>
 
-int main(void)
+int main15(void)
 {
 	// 	양의 정수를 입력하고 자릿수를 출력하는 프로그램
 	// 	135 입력 시 '그 수는 3자리입니다.' 출력
 	// 	1314 입력 '그 수는 4자리입니다. 출력
 
-	char number[100];
+	char number[100] = "";
 
 	int inputNum = 0;
 	int digits = 0;
 
 	do {
-		printf("input positive integer : "); scanf_s("%d", &inputNum);
+		printf("양의 정수 입력 : "); gets(number);
+		inputNum = atoi(number);	
+
 	} while (0 >= inputNum);
 
-	//digits = strlen();
+	digits = strlen(number);
 
-	if (digits >= 0)
-	{
-
-	}
-	else
-	{
-		digits = digits / 10;
-
-		if (1 <= digits)
-		{
-
-		}
-	}
+	printf("그 수는 %d자리 입니다.", digits);
 
 	return 0;
 }
