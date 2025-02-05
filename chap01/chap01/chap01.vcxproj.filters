@@ -60,5 +60,11 @@
     <ClCompile Include="dbl_digits.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="multi99table.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Q12.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

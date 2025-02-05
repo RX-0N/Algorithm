@@ -4,7 +4,7 @@
 // 계층적으로 배치하여 프로그램을 구성하는 방법을 구조적 프로그래밍(structured programming)이라고 한다.
 // 구조적 프로그래밍은 순차, 선택, 반복이라는 3종류의 제어 흐름을 사용합니다.
 
-int main(void)
+int main16(void)
 {
 	int no;
 	printf("2자리 정수를 입력하세요.\n");
