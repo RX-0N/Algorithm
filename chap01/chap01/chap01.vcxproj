@@ -132,10 +132,13 @@
     <ClCompile Include="max3comb.c" />
     <ClCompile Include="med3.c" />
     <ClCompile Include="multi99table.c" />
-    <ClCompile Include="practice_01.c" />
+    <ClCompile Include="Q1.c" />
     <ClCompile Include="Q10.c" />
     <ClCompile Include="Q11.c" />
     <ClCompile Include="Q12.c" />
+    <ClCompile Include="Q13.c" />
+    <ClCompile Include="Q14.c" />
+    <ClCompile Include="Q15.c" />
     <ClCompile Include="Q6.c" />
     <ClCompile Include="Q7.c" />
     <ClCompile Include="Q8.c" />

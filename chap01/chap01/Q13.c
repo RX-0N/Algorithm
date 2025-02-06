@@ -19,7 +19,7 @@
 //		printf("%2d |", i);
 //		for (j = 1; j <= 9; j++)
 //		{
-//			printf("%3d ", j * i);
+//			printf("%3d ", j + i);
 //		}
 //		
 //		putchar('\n');

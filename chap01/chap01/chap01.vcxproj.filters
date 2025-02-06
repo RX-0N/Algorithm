@@ -21,7 +21,7 @@
     <ClCompile Include="max3comb.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="practice_01.c">
+    <ClCompile Include="Q1.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="med3.c">
@@ -64,6 +64,15 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Q12.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Q13.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Q14.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Q15.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
