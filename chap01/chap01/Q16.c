@@ -5,6 +5,8 @@ void triangleLB(int n)
 	// 왼쪽 아래가 직각인 이등변 삼각형 출력
 	int h, w;
 
+	printf("왼쪽 아래가 직각인 이등변 삼각형 출력 : \n");
+
 	for (h = 1; h <= n; h++)
 	{
 		for (w = 1; w <= h; w++)
@@ -19,9 +21,11 @@ void triangleLU(int n)
 {
 	int h, w;
 
+	printf("왼쪽 위가 직각인 이등변 삼각형 출력 : \n");
+
 	for (h = 1; h <= n; h++)
 	{
-		for (w = 1; w <= h; w++)
+		for (w = n; w >= h; w--)
 		{
 			putchar('*');
 		}
@@ -29,6 +33,23 @@ void triangleLU(int n)
 	}
 }
 
+void triangleRU(int n)
+{
+	printf("오른쪽 위가 직각인 이등변 삼각형 출력 : \n");
+
+	int h, w, x = 0;
+
+	for (h = 1; h <= n; h++)
+	{
+		for (w = n; w >= h; w--)
+		{
+			x = w - h;
+			for()
+			putchar('*');
+		}
+		putchar('\n');
+	}
+}
 
 int main(void)
 {
@@ -39,7 +60,8 @@ int main(void)
 		scanf_s("%d", &n);
 	} while (n <= 0);
 
-	triangleLB(n);
+	//triangleLB(n);
+	//triangleLU(n);
 
 	return 0;
 }
