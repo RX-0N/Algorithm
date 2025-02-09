@@ -139,6 +139,7 @@
     <ClCompile Include="Q13.c" />
     <ClCompile Include="Q14.c" />
     <ClCompile Include="Q15.c" />
+    <ClCompile Include="Q16.c" />
     <ClCompile Include="Q6.c" />
     <ClCompile Include="Q7.c" />
     <ClCompile Include="Q8.c" />
@@ -147,6 +148,7 @@
     <ClCompile Include="sum_for.c" />
     <ClCompile Include="sum_for_pos.c" />
     <ClCompile Include="sum_while.c" />
+    <ClCompile Include="triangleLB.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
