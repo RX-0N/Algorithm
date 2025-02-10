@@ -37,14 +37,17 @@ void triangleRU(int n)
 {
 	printf("오른쪽 위가 직각인 이등변 삼각형 출력 : \n");
 
-	int h, w, x = 0;
+	int h, w, x;
 
 	for (h = 1; h <= n; h++)
-	{
-		for (w = n; w >= h; w--)
+	{		
+		for (x = n - h; x < h; x++)
 		{
-			x = w - h;
-			for()
+			putchar(' ');			
+		}
+
+		for (w = n; w >= h; w--)
+		{		
 			putchar('*');
 		}
 		putchar('\n');
@@ -62,6 +65,7 @@ int main(void)
 
 	//triangleLB(n);
 	//triangleLU(n);
+	triangleRU(n);
 
 	return 0;
 }
