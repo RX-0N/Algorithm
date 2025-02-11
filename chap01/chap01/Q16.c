@@ -41,7 +41,7 @@ void triangleRU(int n)
 
 	for (h = 1; h <= n; h++)
 	{		
-		for (x = n - h; x < h; x++)
+		for (x = 1; x < h; x++)
 		{
 			putchar(' ');			
 		}
@@ -52,6 +52,15 @@ void triangleRU(int n)
 		}
 		putchar('\n');
 	}
+}
+
+void triangleRB(int n)
+{
+	printf("오른쪽 아래가 직각인 이등변 삼각형 출력 : \n");
+
+	int h, w, x;
+
+
 }
 
 int main(void)
@@ -65,7 +74,7 @@ int main(void)
 
 	//triangleLB(n);
 	//triangleLU(n);
-	triangleRU(n);
+	//triangleRU(n)
 
 	return 0;
 }
